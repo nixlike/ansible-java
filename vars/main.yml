@@ -1,5 +1,5 @@
 ---
-# path for ansible to store downloaded or templated data
+# path for ansible to store downloaded or templated data, ansible control machine should be able to write into parent folder (local_action!)
 local_ansible_data_path: /usr/local/src/ansible/data
 remote_ansible_data_path: "{{ local_ansible_data_path }}"
 

@@ -16,12 +16,8 @@
 #   downloading Java.
 - name: Install local ansible data path directory
   tags: java
-  sudo: yes
   local_action: file
     state=directory
-    owner=0
-    group=0
-    mode=2777
     dest={{ local_ansible_data_path }}
 
 
